@@ -17,12 +17,12 @@
             <div class="img_container">
                 <img src="asserts/oh manapenne.jpg" alt=" NOT " />
             </div>
-            <audio src="music/Bodhai Kaname.mp3" controls></audio>
+            <audio src="music/Bodhai Kaname.mp3" ></audio>
 
             <!---- controls -->
             <div class="music_controls">
                 <i class="fas fa-step-backward" id="back" title="Back"></i>
-                <i class="fas fa-play-circle main-button" id="play" title="Play"></i>
+                <i class="fas fa-play main-button" id="play" title="Play"></i>
                 <i class="fas fa-step-forward" id="next" title="Next"></i>
             </div>
         </div>
@@ -81,14 +81,14 @@
     const playMusic = () => {
         music.play();
         isplay = true;
-        play.classList.replace('fa-play-circle','fa-pause');
+        play.classList.replace('fa-play','fa-pause');
         img.classList.add("anime");
     };
 // for pause
     const pauseMusic = () => {
         music.pause();
         isplay = false;
-        play.classList.replace('fa-pause','fa-play-circle');
+        play.classList.replace('fa-pause','fa-play');
         img.classList.remove("anime");
     };
 
