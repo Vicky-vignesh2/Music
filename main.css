@@ -10,8 +10,8 @@
 html {
     font-size: 63%;
     font-family: 'Lobster', cursive;;
+    
 }
-
 .main_div {
 width: 100vw;
 height: 100vh;
@@ -19,16 +19,19 @@ background-color: #f6f6f6;
 display: flex;
 place-items: center;
 justify-content: center;
+background-image: url(asserts/bgs.jpeg);
+background-size: cover;
 }
 
 .music_container {
-    width: 39rem;
-    height: 69rem;
+    width: 35rem;
+    height: 60rem;
     background-color: #ffffff;
     border-radius: 2rem;
-    box-shadow: 0 1.9rem 4rem 0.7rem rgba(0,0,0,0.3);
+    box-shadow: 0 1.9rem 4rem 0.7rem rgba(13, 167, 206, 0.3);
     padding: 3rem;
     text-align: center;
+    background: #e90909;
 }
 
 .music_container #title {
@@ -39,7 +42,7 @@ justify-content: center;
     color: rgb(39, 147, 167);
     margin: 4rem 0 0.4rem 0;
     font-size: 2.6rem;
-    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.3);
+    text-shadow: 0 0.3rem 0.5rem rgba(13,167,206,0.3);
 }
 
 .music_container #artist{
@@ -69,34 +72,44 @@ img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    object-fit: contain;
-    box-shadow: 0 1.3rem 3rem 0.5rem rgba(0,0,0,0.4);
+    object-fit: cover;
+    box-shadow: 0 1.3rem 3rem 0.5rem rgba(13,167,206,0.4);
 }
 .music_controls .fas {
-    color: #111111;
     font-size: 2rem;
     cursor: pointer;
-    filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4));
+    filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(132, 213, 233, 0.4));
 }
 
 .music_container .main-button {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
-    background-color: #111;
-    color: #f6f6f6;
+    background-color: rgb(223, 106, 106);
+    color: #0f0f0f;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.4rem;
 }
-
-.music_controls .fas:hover {
- color: grey;
+.music_container .main-button:hover{
+    background-color: #000;
 }
-.music_controls .fa-play-circle:hover{
+#back{
+    color: #b96c6c;
+}
+#next{
+    color: #b96c6c;
+}
+#next:hover{
+    color: #000;
+}
+#back:hover{
+    color: #000;
+}
+.music_controls .fa-play{
     background-color: #f6f6f6;
-    color: #111;
+    color: #c91d1d;
     box-shadow: 0 1rem 2rem 0.2rem rgba(0,0,0,0.4);
 }
 
